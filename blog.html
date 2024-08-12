@@ -1,11 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="src/output.css" />
   </head>
   <body>
-    <p>test</p>
+    <!-- Header Start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a href="#home" class="font-bold text-primary text-lg block pt-6">Satriyo</a>
+          </div>
+          <div class="flex items-center px-4">
+            <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+              <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+            </button>
+
+            <nav id="navMenu" class="hidden absolute py-4 bg-white shadow-lg rounded-lg max-w-[200px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+              <ul class="block lg:flex">
+                <li class="group mb-3">
+                  <a href="#home" class="text-base text-dark mx-8 group-hover:text-primary">Beranda</a>
+                </li>
+
+                <li class="group mb-3">
+                  <a href="#home" class="text-base text-dark mx-8 group-hover:text-primary">Tentang Saya</a>
+                </li>
+
+                <li class="group mb-3">
+                  <a href="#home" class="text-base text-dark mx-8 group-hover:text-primary">Portofolio</a>
+                </li>
+
+                <li class="group mb-3">
+                  <a href="#home" class="text-base text-dark mx-8 group-hover:text-primary">Client</a>
+                </li>
+
+                <li class="group mb-3">
+                  <a href="#home" class="text-base text-dark mx-8 group-hover:text-primary">Blog</a>
+                </li>
+
+                <li class="group mb-3">
+                  <a href="#home" class="text-base text-dark mx-8 group-hover:text-primary">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <div class="container mx-auto max-w-4xl" style="margin-top: 80px">
+      <div class="flex justify-center mb-5">
+        <div class="w-full md:w-2/3">
+          <div class="max-w-xl mx-auto mb-16">
+            <div style="max-height: 350px; overflow: hidden; display: flex; justify-content: center">
+              <img src="img/projects/3.jpg" alt="{{ $post->category->name }}" class="img-fluid text-center" />
+            </div>
+
+            <h1 class="mt-5 text-2xl">Tips Belajar Programming</h1>
+
+            <p class="mt-2 mb-5 text-sm">
+              By. <a href="#" class="text-decoration-none"><a href="">Satriyo Rizkyansah</a></a> in
+              <a href="#" class="text-decoration-none">Category</a>
+            </p>
+
+            <article class="mb-5 fs-5">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque numquam error praesentium nihil reiciendis laudantium cumque ipsam similique provident, dolorem alias veritatis et quae facilis corporis rem voluptatem. Ipsam
+              earum nam magnam magni tempore, autem ullam nihil tempora eos aliquid doloremque quas consequuntur? Voluptate optio fugit deleniti placeat dicta doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+
+              <br />
+              <br />
+              quibusdam voluptate ipsa in vel quasi eveniet, alias obcaecati, quidem adipisci, nobis assumenda temporibus est! Rerum sunt eius provident nihil. Ex, ipsa sed voluptatem odio rem eos architecto quod ducimus vitae consequuntur,
+              iure, temporibus unde distinctio doloribus deserunt ut perferendis quas dolor? Et, voluptates ratione? Voluptatibus, debitis sunt maiores temporibus nam libero! Earum magni repudiandae autem similique a dicta dolorum
+              voluptatum sed odit! Reprehenderit tempore, eos illo repellendus voluptatibus rem est ea mollitia eius pariatur repudiandae iusto veritatis expedita omnis ut incidunt laudantium asperiores quam quod inventore, magni odio velit
+              eum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam modi blanditiis mollitia asperiores culpa quasi eveniet dicta accusamus. Placeat earum nobis ipsum nisi, beatae itaque ea, laudantium iure iste tenetur quae
+              repellendus
+
+              <br /><br />consequatur enim, tempore aspernatur harum? Dignissimos id dolores excepturi doloribus minima exercitationem, quae repellendus. Sed, optio maiores tenetur, atque ducimus suscipit odio esse vel illo necessitatibus
+              distinctio libero? Nostrum eaque at distinctio temporibus molestias sed, quis asperiores architecto, eum esse sequi accusantium. Tempore.
+            </article>
+
+            <a href="index.html" class="px-3 py-2 text-white bg-primary rounded-lg hover:opacity-80">Back To Home</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <section id="portofolio" class="pt-36 pb-16">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16"><img src="" alt=""></div>
+        </div>
+      </div>
+    </section> -->
+    <script src="src/js/script.js"></script>
   </body>
 </html>
