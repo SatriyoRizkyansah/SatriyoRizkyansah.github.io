@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio Tailwind CSS</title>
     <link rel="stylesheet" href="src/output.css" />
+    <!-- <link href="src/myCss/style.css" rel="stylesheet" /> -->
   </head>
   <body>
     <!-- Header Start -->
@@ -58,10 +59,16 @@
     <section id="hero" class="pt-36">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full self-center px-4 lg:w-1/2">
-            <h1 class="text-base font-semibold text-primary md:text-xl">Hello there👋, i'am <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">Satriyo Rizkyansah</span></h1>
-            <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">Student, <span class="text-dark">Full Stack Dev</span></h2>
-            <p class="font-medium text-slate-400 mb-10 leading-relaxed">You've found my personal slice of the internet. <span class="font-bold text-dark">Take a look and enjoy!</span></p>
+          <div class="w-full self-center text-primary px-4 lg:w-1/2">
+            <h1 class="text-base font-semibold md:text-xl">
+              Hello there👋, i'am
+              <span class="block font-bold text-4xl mt-1 lg:text-5xl text-dark">Satriyo Rizkyansah</span>
+            </h1>
+            <h2 class="font-medium text-secondary text-lg lg:text-2xl mt-1">Student, <span class="text-dark">Full Stack Dev</span></h2>
+
+            <!-- <div class="font-medium text-slate-400 mb-10 leading-relaxed">You've found my personal slice of the internet. <span class="font-bold text-dark">Take a look and enjoy!</span></div> -->
+
+            <div class="font-medium text-slate-400 mb-10 leading-relaxed" id="app"></div>
 
             <a href="#" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg opacity-80 transition duration-300 ease-in-out">Contact Me</a>
           </div>
@@ -435,5 +442,25 @@
     </footer>
     <!-- Footer End-->
   </body>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script>
+    var app = document.getElementById("app");
+
+    var typewriter = new Typewriter(app, {
+      loop: false,
+      delay: 75,
+    });
+
+    typewriter
+      .pauseFor(500)
+      .typeString("You've found a small part of me on the internet. <br>")
+      .pauseFor(800)
+      // .deleteChars(10)
+      .typeString(" Thank you for taking the time to look around.  <span style='color: #fc03b1;''>I hope you like it.</span>")
+      // .typeString('<strong>only <span style="color: #27ae60;">5kb</span> Gzipped!</strong>')
+      .pauseFor(1000)
+      .start();
+    8;
+  </script>
   <script src="src/js/script.js"></script>
 </html>
