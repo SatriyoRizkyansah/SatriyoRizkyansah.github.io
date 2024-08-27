@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio Tailwind CSS</title>
     <link rel="stylesheet" href="src/output.css" />
-    <!-- <link href="src/myCss/style.css" rel="stylesheet" /> -->
   </head>
   <body class="md:w-[70%] lg:w-[65%] m-auto">
     <!-- Header Start -->
@@ -109,7 +108,7 @@
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
-    <section id="home" class="pt-36 pb-32">
+    <section id="home" class="pt-36">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full px-4 mb-10">
@@ -187,64 +186,138 @@
     <!-- Portofolio Section Start -->
     <section id="portofolio" class="pt-36 pb-16">
       <div class="container">
-        <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-primary mb-2">Portofolio</h4>
-            <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Latest Project</h2>
-            <p class="font-medium text-md text-secondary md:text-lg">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, nobis eius, optio eveniet magni voluptates animi ipsa quasi vero necessitatibus veniam dolores veritatis aut esse velit ipsam facilis, consequatur hic?
-            </p>
-          </div>
-        </div>
+        <h4 class="font-bold text-primary text-lg mb-3">Project</h4>
 
-        <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <img src="img/projects/fromPorto/1.png" alt="" />
-            </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Project 1</h3>
-            <p class="font-medium text-base text-secondary">Creating a landing page portofolio using Bootstrap Framwork</p>
-          </div>
+        <div class="">
+          <!-- Image Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+            <a class="group block relative overflow-hidden rounded-lg" href="blog1.html">
+              <span class="bg-yellow-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800 absolute left-2 top-2">
+                <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd"></path>
+                  <path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"></path>
+                </svg>
+                Blogging Platform
+              </span>
 
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <img src="img/projects/fromPorto/2.png" alt="" />
-            </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Project 2</h3>
-            <p class="font-medium text-base text-secondary">Development of a Decision Support System Website for Selecting the Best Employee Using the Multi-Factor Evaluation Process (MFEP) Method</p>
-          </div>
+              <img class="w-full size-40 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800" src="img/projects/new/bloggingPlatform.png" />
 
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <img src="img/projects/fromPorto/3.png" alt="" />
-            </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Project 3</h3>
-            <p class="font-medium text-base text-secondary">Development of a Cashier Application for a Pizza Store Using Java in NetBeans</p>
-          </div>
+              <div class="absolute bottom-1 end-1 opacity-0 group-hover:opacity-100 transition">
+                <div class="flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200">
+                  <svg class="shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.3-4.3" />
+                  </svg>
+                  <span class="text-xs">View</span>
+                </div>
+              </div>
+            </a>
 
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <img src="img/projects/fromPorto/4.png" alt="" />
-            </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Project 4</h3>
-            <p class="font-medium text-base text-secondary">Development of a Blogging Platform Website Using the Laravel Framework</p>
+            <a class="group block relative overflow-hidden rounded-lg" href="#">
+              <img
+                class="w-full size-40 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800"
+                src="https://images.unsplash.com/photo-1616427592793-67b858804534?q=80&w=320&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Project"
+              />
+              <div class="absolute bottom-1 end-1 opacity-0 group-hover:opacity-100 transition">
+                <div class="flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200">
+                  <svg class="shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.3-4.3" />
+                  </svg>
+                  <span class="text-xs">View</span>
+                </div>
+              </div>
+            </a>
+
+            <a class="group block relative overflow-hidden rounded-lg" href="#">
+              <img
+                class="w-full size-40 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800"
+                src="https://images.unsplash.com/photo-1516131206008-dd041a9764fd?q=80&w=320&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Project"
+              />
+              <div class="absolute bottom-1 end-1 opacity-0 group-hover:opacity-100 transition">
+                <div class="flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200">
+                  <svg class="shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.3-4.3" />
+                  </svg>
+                  <span class="text-xs">View</span>
+                </div>
+              </div>
+            </a>
+
+            <a class="group block overflow-hidden rounded-lg relative" href="#">
+              <img
+                class="w-full size-40 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800"
+                src="https://images.unsplash.com/photo-1707760696486-2a2cd7e0b6a6?q=80&w=320&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Project"
+              />
+              <div class="absolute bottom-1 end-1 opacity-0 group-hover:opacity-100 transition">
+                <div class="flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200">
+                  <svg class="shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.3-4.3" />
+                  </svg>
+                  <span class="text-xs">View</span>
+                </div>
+              </div>
+            </a>
+
+            <a class="group block relative overflow-hidden rounded-lg" href="#">
+              <img
+                class="w-full size-40 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800"
+                src="https://images.unsplash.com/photo-1585159812596-fac104f2f069?q=80&w=320&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Project"
+              />
+              <div class="absolute bottom-1 end-1 opacity-0 group-hover:opacity-100 transition">
+                <div class="flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200">
+                  <svg class="shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.3-4.3" />
+                  </svg>
+                  <span class="text-xs">View</span>
+                </div>
+              </div>
+            </a>
+
+            <a class="group block relative overflow-hidden rounded-lg" href="#">
+              <img
+                class="w-full size-40 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800"
+                src="https://images.unsplash.com/photo-1654131300276-db70adf4f85d?q=80&w=320&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Project"
+              />
+              <div class="absolute bottom-1 end-1 opacity-0 group-hover:opacity-100 transition">
+                <div class="flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200">
+                  <svg class="shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.3-4.3" />
+                  </svg>
+                  <span class="text-xs">View</span>
+                </div>
+              </div>
+            </a>
           </div>
+          <!-- End Image Grid -->
         </div>
       </div>
     </section>
     <!-- Portofolio Section End -->
 
     <!-- Blog Section Start -->
-    <section id="blog" class="pt-36 pb-32 bg-slate-100">
+    <section id="blog" class="pt-36 pb-32">
       <div class="container">
         <div class="max-w-xl mx-auto text-center mb-16">
           <h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
-          <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Latest writing</h2>
-          <p class="font-medium text-md text-secondary md:tex-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos tempora nam doloremque facilis assumenda molestiae.</p>
+          <h2 class="font-bold text-dark text-3xl mb-4 sm:text-3xl lg:text-4xl">Latest writing</h2>
+          <p class="font-medium text-md text-secondary md:tex-lg">
+            I enjoy sharing my thoughts and experiences as a web developer through writing. On my blog, you'll find insights into the latest trends in web development, tips for using Laravel and Tailwind CSS effectively, and reflections on
+            the challenges and successes I encounter in my projects.
+          </p>
         </div>
 
         <div class="flex flex-wrap">
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div class="w-full px-4 lg:w-1/2">
             <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
               <img src="img/projects/3.jpg" alt="" class="w-full" />
               <div class="py-8 px-6">
@@ -253,12 +326,12 @@
                 </h3>
                 <p class="font-medium text-base text-secondary mb-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam facere debitis enim blanditiis odit aliquid adipisci earum culpa nisi eveniet!</p>
 
-                <a href="blog.html" class="px-3 py-2 text-white bg-primary rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+                <a href="blog.html" class="text-sm px-3 py-2 text-white bg-primary rounded-lg hover:opacity-80">Baca Selengkapnya</a>
               </div>
             </div>
           </div>
 
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div class="w-full px-4 lg:w-1/2">
             <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
               <img src="img/projects/3.jpg" alt="" class="w-full" />
               <div class="py-8 px-6">
@@ -267,21 +340,7 @@
                 </h3>
                 <p class="font-medium text-base text-secondary mb-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam facere debitis enim blanditiis odit aliquid adipisci earum culpa nisi eveniet!</p>
 
-                <a href="blog.html" class="px-3 py-2 text-white bg-primary rounded-lg hover:opacity-80">Baca Selengkapnya</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-              <img src="img/projects/3.jpg" alt="" class="w-full" />
-              <div class="py-8 px-6">
-                <h3>
-                  <a href="blog.html" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">tips belajar programming </a>
-                </h3>
-                <p class="font-medium text-base text-secondary mb-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam facere debitis enim blanditiis odit aliquid adipisci earum culpa nisi eveniet!</p>
-
-                <a href="blog.html" class="px-3 py-2 text-white bg-primary rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+                <a href="blog.html" class="text-sm px-3 py-2 text-white bg-primary rounded-lg hover:opacity-80">Baca Selengkapnya</a>
               </div>
             </div>
           </div>
@@ -289,47 +348,70 @@
       </div>
     </section>
 
-    <!-- Contact Section Start -->
-    <!-- <section id="contact" class="pt-36 pb-32">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-primary mb-2">Contact</h4>
-            <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Contact Me</h2>
-            <p class="font-medium text-md text-secondary md:tex-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos tempora nam doloremque facilis assumenda molestiae.</p>
-          </div>
-        </div>
-
-        <form>
-          <div class="w-full lg:w-2/3 mx-auto">
-            <div class="w-full px-4 mb-8">
-              <label for="name" class="text-base font-bold text-primary">Nama</label>
-              <input type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
-            </div>
-
-            <div class="w-full px-4 mb-8">
-              <label for="email" class="text-base font-bold text-primary">Email</label>
-              <input type="email" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
-            </div>
-
-            <div class="w-full px-4 mb-8">
-              <label for="pesan" class="text-base font-bold text-primary">Pesan</label>
-              <textarea type="text" id="pesan" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"> </textarea>
-            </div>
-
-            <div class="w-full px-4">
-              <button class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section> -->
-    <!-- Contact Section End-->
-
     <!-- Footer Start -->
+    <footer class="w-full max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="py-6 border-t border-gray-200 dark:border-neutral-700">
+        <div class="flex flex-wrap justify-between items-center gap-2">
+          <div>
+            <p class="text-xs text-gray-600 dark:text-neutral-400">© 2024 Preline Labs.</p>
+          </div>
+          <!-- End Col -->
 
+          <!-- List -->
+          <ul class="flex flex-wrap items-center">
+            <li
+              class="inline-block relative pe-4 text-xs last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-1.5 before:-translate-y-1/2 before:size-[3px] before:rounded-full before:bg-gray-400 dark:text-neutral-500 dark:before:bg-neutral-600"
+            >
+              <a class="text-xs text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-none focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400" href="#"> X (Twitter) </a>
+            </li>
+            <li
+              class="inline-block relative pe-4 text-xs last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-1.5 before:-translate-y-1/2 before:size-[3px] before:rounded-full before:bg-gray-400 dark:text-neutral-500 dark:before:bg-neutral-600"
+            >
+              <a class="text-xs text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-none focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400" href="#"> Dribbble </a>
+            </li>
+            <li class="inline-block pe-4 text-xs">
+              <a class="text-xs text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-none focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400" href="#"> Github </a>
+            </li>
+            <li class="inline-block">
+              <!-- Dark Mode -->
+              <button
+                type="button"
+                class="hs-dark-mode hs-dark-mode-active:hidden relative flex justify-center items-center size-7 border border-gray-200 text-gray-500 rounded-full hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:border-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                data-hs-theme-click-value="dark"
+              >
+                <span class="sr-only">Dark</span>
+                <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                </svg>
+              </button>
+              <button
+                type="button"
+                class="hs-dark-mode hs-dark-mode-active:flex hidden relative flex justify-center items-center size-7 border border-gray-200 text-gray-500 rounded-full hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:border-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                data-hs-theme-click-value="light"
+              >
+                <span class="sr-only">Light</span>
+                <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <path d="M12 2v2"></path>
+                  <path d="M12 20v2"></path>
+                  <path d="m4.93 4.93 1.41 1.41"></path>
+                  <path d="m17.66 17.66 1.41 1.41"></path>
+                  <path d="M2 12h2"></path>
+                  <path d="M20 12h2"></path>
+                  <path d="m6.34 17.66-1.41 1.41"></path>
+                  <path d="m19.07 4.93-1.41 1.41"></path>
+                </svg>
+              </button>
+              <!-- End Dark Mode -->
+            </li>
+          </ul>
+          <!-- End List -->
+        </div>
+      </div>
+    </footer>
     <!-- Footer End-->
   </body>
+  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   <script>
     var app = document.getElementById("app");
@@ -344,7 +426,7 @@
       .typeString("You've found a small part of me on the internet. <br>")
       .pauseFor(800)
       // .deleteChars(10)
-      .typeString(" Thank you for taking the time to look around ❤️")
+      .typeString(" Thank you for taking the time to look around <span style='color: #DE3163;'>❤️</span>")
       // .typeString('<strong>only <span style="color: #27ae60;">5kb</span> Gzipped!</strong>')
       .pauseFor(1000)
       .start();
