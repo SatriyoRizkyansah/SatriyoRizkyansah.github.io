@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="w-14 h-14">
+            <a href="https://github.com/SatriyoRizkyansah" class="font-bold text-primary text-lg block pt-6" target="_blank">
+              <img class="-mt-6" src="img/tech/5.png" alt="https://github.com/SatriyoRizkyansah" />
+            </a>
+          </div>
+          <div class="flex items-center px-4">
+            <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+              <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+            </button>
+
+            <nav id="navMenu" class="hidden absolute py-4 bg-white shadow-lg rounded-lg max-w-[200px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+              <ul class="block lg:flex">
+                <li class="group mb-3">
+                  <a href="#home" class="text-base text-dark mx-8 group-hover:text-primary">Beranda</a>
+                </li>
+
+                <li class="group mb-3">
+                  <a href="#home" class="text-base text-dark mx-8 group-hover:text-primary">Tentang Saya</a>
+                </li>
+
+                <li class="group mb-3">
+                  <a href="#portofolio" class="text-base text-dark mx-8 group-hover:text-primary">Portofolio</a>
+                </li>
+
+                <li class="group mb-3">
+                  <a href="#tech" class="text-base text-dark mx-8 group-hover:text-primary">Tech Stack</a>
+                </li>
+
+                <li class="group mb-3">
+                  <a href="#blog" class="text-base text-dark mx-8 group-hover:text-primary">Blog</a>
+                </li>
+
+                <li class="group mb-3">
+                  <a href="#footer" class="text-base text-dark mx-8 group-hover:text-primary">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <div class="container mx-auto max-w-4xl" style="margin-top: 80px">
+      <div class="flex justify-center mb-5">
+        <div class="w-full lg:w-1/2 sm::w-1/3 xl:w-1/3">
+          <div class="max-w-xl mx-auto mb-16">
+            <div style="max-height: 350px; overflow: hidden; display: flex; justify-content: center">
+              <img src="img/projects/web/bloggingPlatform/1.png" class="font-semibold img-fluid text-center rounded" />
+            </div>
+
+            <h1 class="mt-2 text-2xl"><a href="https://github.com/SatriyoRizkyansah/laravel11">Blogging Platform</a></h1>
+
+            <p class="mt-2 mb-5 text-sm">By <a href="">Satriyo Rizkyansah</a></p>
+
+            <article class="mb-5 fs-5">
+              As a web developer, I recently completed an exciting project: building a fully functional blogging platform. This platform allows users to create and manage their own blog posts after registering an account. The project was a
+              rewarding experience, and I'd like to share some insights into the process and the technologies I used.
+
+              <br />
+              <br />
+              <h4>Project Overview</h4>
+              The goal of this project was to develop a user-friendly blogging platform where individuals could easily sign up, create, and publish their own blog posts. The platform needed to be intuitive, secure, and visually appealing,
+              catering to both experienced bloggers and those new to the craft.
+
+              <br /><br />
+
+              <span class="text-sm">Source Code : <a href="https://github.com/SatriyoRizkyansah/laravel11" class="text-blue-600 underline" target="_blank">Here {/}</a></span>
+            </article>
+
+            <a href="index.html" class="px-2 py-2 text-white bg-primary rounded-lg hover:opacity-80 text-sm">Back To Home</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/js/script.js"></script>
+  </body>
+</html>
